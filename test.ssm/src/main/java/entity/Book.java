@@ -4,6 +4,13 @@ package entity;
 import java.io.Serializable;
 
 public class Book implements Serializable{
+
+	private Integer id;
+	private String name;
+	private String typename;
+	//外键列（有数据表，对象额外描述，扩展表述）
+	private Integer typeid;
+	
 	//状态列（无数据表，列状态标识，翻译）
 	private Integer sex;
 	public static String[] sexs= {"不限","男","女"};
@@ -11,20 +18,12 @@ public class Book implements Serializable{
 		return sexs[sex];
 	}
 	
-	
-	//外键列（有数据表，对象额外描述，扩展表述）
-	private Integer typeid;
-	private String typename;
 	public String getTypename() {
 		return typename;
 	}
 	public void setTypename(String typename) {
 		this.typename = typename;
 	}
-
-
-	private Integer id;
-	private String name;
 	public Integer getId() {
 		return id;
 	}
