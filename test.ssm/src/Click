@@ -6,3 +6,5 @@ http://localhost:8080/test.ssm/Fileload.jsp
 
 http://localhost:8080/test.ssm/img  二维码
 servlet包下的类
+
+分支1  BasicController BaseService动态管理表

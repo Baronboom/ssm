@@ -7,7 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-Hello Maven bingo /Type/index.action  or  /Book/index.action
+Hello Maven bingo /Type/index  or  /Book/index
 <br>
 文件上传
 /Fileload.jsp
