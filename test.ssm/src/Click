@@ -1,0 +1,8 @@
+http://localhost:8080/test.ssm/Book/index.action
+http://localhost:8080/test.ssm/Type/index.action
+
+文件上传（ps：这个版本比较low， 详细请查看项目test.load里Click）
+http://localhost:8080/test.ssm/Fileload.jsp
+
+http://localhost:8080/test.ssm/img  二维码
+servlet包下的类
