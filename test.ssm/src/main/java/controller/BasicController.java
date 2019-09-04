@@ -48,6 +48,7 @@ public class BasicController<T>  {
 	
 	@RequestMapping("index")
 	public String index(ModelMap m,HttpServletRequest req) {
+		System.out.println("basic_index");
 		m.put("list", basicservice.getWhere(""));
 		return getTname()+"/index";
 	}
@@ -56,27 +57,32 @@ public class BasicController<T>  {
 	
 	@RequestMapping("delete")
 	public String delete(Integer id,ModelMap m,HttpServletRequest req) {
+		System.out.println("basic_delete");
 		basicservice.delete(id);
 		 return index( m,req);
 	}
 	
 	@RequestMapping("add")
 	public String add(ModelMap m,HttpServletRequest req) {
+		System.out.println("basic_add");
 		return getTname()+"/edit";
 	}
 	@RequestMapping("edit")
 	public String edit(Integer id,ModelMap m,HttpServletRequest req) {
+		System.out.println("basic_edit");
 		m.put("info", basicservice.getByid(id));
 		return add( m,req);
 	}
 	
 	@RequestMapping("insert")
 	public String insert(  T t,ModelMap m,HttpServletRequest req) {
+		System.out.println("basic_insert");
 		basicservice.insert(t);
 			return index( m,req);
 	}
 	@RequestMapping("update")
 	public String update(T t,ModelMap m,HttpServletRequest req) {
+		System.out.println("basic_update");
 		basicservice.update(t);
 		return index( m,req);
 	}

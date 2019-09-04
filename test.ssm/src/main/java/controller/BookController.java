@@ -23,6 +23,7 @@ public class BookController extends BasicController<Book> {
 	
 	@Override
 	public String index(ModelMap m,HttpServletRequest req) {
+		System.out.println("Book_index");
 		String txt=req.getParameter("txt");
 		String where=""; 
 		if(txt!=null&&txt.length()>0) where=" where book.name like '%"+txt+"%' ";
@@ -32,12 +33,14 @@ public class BookController extends BasicController<Book> {
 
 	@RequestMapping("add")
 	public String add(ModelMap m,HttpServletRequest req) {
+		System.out.println("add");
 		m.put("sexs", Book.sexs);
 		m.put("typelist", tservice.getAll());
 		return "Book/edit";
 	}
 	@RequestMapping("edit")
 	public String edit(Integer id,ModelMap m,HttpServletRequest req) {
+		System.out.println("edit");
 		m.put("info", service.getByid(id));
 		return add(m,req);
 	}
