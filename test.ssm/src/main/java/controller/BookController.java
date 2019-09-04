@@ -20,10 +20,6 @@ public class BookController extends BasicController<Book> {
 	
 	@Autowired
 	TypeService tservice;
-//	
-//	
-//	
-
 	
 	@Override
 	public String index(ModelMap m,HttpServletRequest req) {
@@ -45,5 +41,4 @@ public class BookController extends BasicController<Book> {
 		m.put("info", service.getByid(id));
 		return add(m,req);
 	}
-
 }
