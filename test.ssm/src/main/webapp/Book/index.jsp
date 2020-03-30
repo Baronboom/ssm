@@ -10,6 +10,7 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 </head>
+
 <script type="text/javascript">
 	function del(id) {
 		if(confirm("是否删除？")) {
@@ -19,11 +20,13 @@
 </script>
 
 <body>
+
 	<form action="index.action">
 		<input name="txt"> <input type="submit" value="查询">
 	</form>
 	
 	<a href="add.action">新增</a> 
+	
 	<table>
 		<tr>
 			<td>编号</td>

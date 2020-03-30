@@ -13,6 +13,7 @@
 <body>
 <c:if test="${info.id==null}">
 		<form action="insert.action" method="post">   
+		
 			<input name="name">
 			
 			<select name = "sex">
